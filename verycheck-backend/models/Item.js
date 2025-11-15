@@ -22,6 +22,7 @@ const itemSchema = new mongoose.Schema({
     status: { type: String, enum: ["available", "rented", "repair"], default: "available" },
 
     // QR code for scanning
+    // Likely what your schema has:
     qrCode: { type: String, unique: true, default: null },
 
     // Rental tracking (current)
