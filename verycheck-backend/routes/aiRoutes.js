@@ -8,7 +8,7 @@ const {
     clubForecast,
     generalQuery  // <-- Import the new function
 } = require("../controllers/aiController");
-const auth = require("../middleware/auth");
+const auth = require("../middleware/authMiddleware.js");
 
 // --- General Purpose AI Query (The Chatbot) ---
 // This is the core endpoint your frontend will use.

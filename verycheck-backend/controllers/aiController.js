@@ -3,10 +3,17 @@
 const Item = require("../models/Item");
 const Club = require("../models/Club");
 const User = require("../models/User");
+// controllers/aiController.js
+// ...
 const { GoogleGenAI } = require("@google/genai");
 
-// Initialize Gemini SDK (requires GEMINI_API_KEY in .env)
+// TEMPORARY DEBUG LINE:
+console.log("DEBUG: Key Tail:", process.env.GEMINI_API_KEY ? process.env.GEMINI_API_KEY.slice(-4) : "Key NOT LOADED");
+
+// Initialize Gemini SDK 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+// ...
+// ...
 
 
 // --- 1. Internal Tool Handlers (Functions the AI Model will call) ---
